@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8621745076407124100}
   - component: {fileID: 8621745076407124098}
   - component: {fileID: 8621745076407124099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHand&Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8621745077217969337}
   - component: {fileID: 8621745077217969335}
   - component: {fileID: 8621745077217969336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHand&Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8621745077233124035}
   - component: {fileID: 8621745077233124034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fb025f51ade62854baa195bbdd5631c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 8621745077642253485}
   - component: {fileID: 8621745077642253483}
   - component: {fileID: 8621745077642253484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,9 +375,11 @@ GameObject:
   - component: {fileID: 8621745077896524816}
   - component: {fileID: 8621745077896524814}
   - component: {fileID: 8621745077896524815}
-  m_Layer: 0
+  - component: {fileID: 1786264688}
+  - component: {fileID: 1786264689}
+  m_Layer: 6
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,8 +449,57 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1786264688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8621745077896524817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: 0}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1786264689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8621745077896524817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee0c0aaa08848e4e99b7383faff0e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  maxSpeed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8621745077982454253
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8621745077982454252}
   - component: {fileID: 8621745077982454251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8621745077988451116}
   - component: {fileID: 8621745077988451115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fb025f51ade62854baa195bbdd5631c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -625,7 +676,7 @@ GameObject:
   - component: {fileID: 8621745078132565123}
   - component: {fileID: 8621745078132565121}
   - component: {fileID: 8621745078132565122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Foot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
