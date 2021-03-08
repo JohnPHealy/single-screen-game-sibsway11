@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &477669579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1786264689, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+  m_PrefabInstance: {fileID: 8621745076378699903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee0c0aaa08848e4e99b7383faff0e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +957,98 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 84d152a03bb982243a219a5d56850e49, type: 3}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: Gameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Keyboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: bbe96377-7da3-4daf-96bd-456d4d8d70e1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 4a139a2d-83d5-42b9-a9fb-6d9d60ce5e0d
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: Gameplay/Move[/Keyboard/a,/Keyboard/d,/Keyboard/leftArrow,/Keyboard/rightArrow]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: Gameplay/Jump[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 477669579}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 477669579}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786264688, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1786264689, guid: ad30c80fddbbb3c4ebc656fafd1210a5, type: 3}
       propertyPath: groundCheck
       value: 
