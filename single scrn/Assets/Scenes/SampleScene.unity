@@ -247,11 +247,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597917705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.96, y: -5.14, z: -0.473594}
-  m_LocalScale: {x: 2.0003254, y: 1.3272125, z: 1.193}
+  m_LocalPosition: {x: 0.01854623, y: 0.24707769, z: -0.473594}
+  m_LocalScale: {x: 1.7582189, y: 1.1665752, z: 1.193}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1892011195}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130812063
 GameObject:
@@ -1147,9 +1147,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.9811, y: -5.4211, z: 0}
   m_LocalScale: {x: 1.1377, y: 1.1377, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 597917707}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1892011196
 MonoBehaviour:
@@ -1165,9 +1166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   maxSpeed: 3
-  jumpForce: 1
-  groundCheck: {fileID: 0}
+  jumpForce: 5
+  groundCheck: {fileID: 597917706}
   groundLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   cancelJumpEnabled: 0
