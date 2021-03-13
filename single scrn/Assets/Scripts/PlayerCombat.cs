@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collectons.Generic;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    [SerializeField] private Collider2D playerCheck;
+    [SerializeField] private Collider2d playerCheck;
     [SerializeField] private LayerMask playerLayers;
+    [SerializeField] private GameManager manager;
 
 
     private void Update()
@@ -16,11 +18,11 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Colision2d other)
     {
         if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
+    manager.RespawnPlayer();
         }
     }
 }
