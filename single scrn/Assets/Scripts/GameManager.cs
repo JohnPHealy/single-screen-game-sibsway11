@@ -8,13 +8,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject player;
     private Vector3 startPos;
 
-
     private void Start()
     {
         startPos = player.transform.position;
     }
+
     public void RespawnPlayer()
     {
-        RespawnPlayer.transform.position = startPos;
+        player.transform.position = startPos;
     }
 }
+
