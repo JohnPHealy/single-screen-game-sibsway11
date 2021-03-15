@@ -59,8 +59,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canJump)
         {
-            myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            canJump = false;
+            if (context.started)
+            {
+                myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+                canJump = false;
+            }
+        }
+
+        if (context.canceled)
+        {
+            myRB.velocity = new Vector2(myRB.velocity.x, 0f);
+        
         }
     }
 }
