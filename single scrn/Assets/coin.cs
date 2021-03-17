@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
     {
         if (playerCheck.IsTouchingLayers(playerLayers))
         {
-            manager.Addscore(coins);
+            manager.AddScore(coins);
             Destroy(gameObject);
         }
     }
