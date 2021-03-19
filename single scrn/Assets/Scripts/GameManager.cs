@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
@@ -34,6 +35,16 @@ public class GameManager : MonoBehaviour
     private void UpdateUI()
     {
         addScore.Invoke(score.ToString());
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
 
